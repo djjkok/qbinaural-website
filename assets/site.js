@@ -1,1 +1,29 @@
-(()=>{const r=document.documentElement,s=localStorage.getItem("qb-language"),a=(navigator.language||"en").toLowerCase().startsWith("pl")?"pl":"en";function set(l){r.dataset.language=l;r.lang=l;localStorage.setItem("qb-language",l);document.querySelectorAll("[data-set]").forEach(b=>b.classList.toggle("on",b.dataset.set===l))}document.querySelectorAll("[data-set]").forEach(b=>b.onclick=()=>set(b.dataset.set));set(s==="pl"||s==="en"?s:a)})();
+(()=>{
+  const root=document.documentElement;
+  const saved=localStorage.getItem("qb-language");
+  const automatic=(navigator.language||"en").toLowerCase().startsWith("pl")?"pl":"en";
+
+  function setLanguage(language){
+    root.dataset.language=language;
+    root.lang=language;
+    localStorage.setItem("qb-language",language);
+    document.querySelectorAll("[data-set]").forEach(button=>{
+      button.classList.toggle("on",button.dataset.set===language);
+    });
+  }
+
+  document.querySelectorAll("[data-set]").forEach(button=>{
+    button.addEventListener("click",()=>setLanguage(button.dataset.set));
+  });
+
+  setLanguage(saved==="pl"||saved==="en"?saved:automatic);
+
+  const stateCards=[...document.querySelectorAll(".state-card")];
+  stateCards.forEach(card=>{
+    card.addEventListener("click",()=>{
+      const willOpen=card.getAttribute("aria-expanded")!=="true";
+      stateCards.forEach(other=>other.setAttribute("aria-expanded","false"));
+      card.setAttribute("aria-expanded",willOpen?"true":"false");
+    });
+  });
+})();
