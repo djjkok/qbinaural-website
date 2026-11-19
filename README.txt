@@ -1,0 +1,1 @@
+QBINAURAL Premium staging — 5 pages. Open via HTTP server, not file://. Verify EN/PL and App Store CTA. Deploy entire folder as site root only after approval. Original legal content preserved from current GitHub repository.
