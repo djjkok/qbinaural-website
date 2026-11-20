@@ -898,9 +898,27 @@ document.addEventListener('DOMContentLoaded',apply);apply();
     padding-bottom: 8px;
   }
 
-  #experience, #science, #questions {
-    scroll-margin-top: 125px;
-  }
+  html {
+  scroll-padding-top: 0 !important;
+}
+
+#experience, #science, #questions {
+  scroll-margin-top: 125px !important;
+}
+
+#experience {
+  padding-top: 24px !important;
+}
+
+#science.science-strip {
+  min-height: 0 !important;
+  align-items: flex-start !important;
+  padding-top: 24px !important;
+}
+
+#questions.faq-section {
+  padding-top: 24px !important;
+}
 }
 </style>
 </body></html>
