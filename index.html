@@ -867,6 +867,20 @@ new MutationObserver(schedule).observe(root,{attributes:true,attributeFilter:['l
 document.addEventListener('DOMContentLoaded',apply);apply();
 })();</script><style id="qb-mobile-layout-fix">
 @media (max-width: 760px) {
+  /* Center the landing hero in the usable mobile viewport, below fixed navigation. */
+  .hero {
+    min-height: 100svh !important;
+    padding-top: 124px !important;
+    padding-bottom: 20px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .hero .hero-content {
+    padding: 20px 18px 28px !important;
+    margin-block: auto !important;
+  }
   /* Mobile preview: one-line heading, full phone, arrows at its sides. */
   #experience .experience-intro h2 {
     font-size: clamp(20px, 5.5vw, 28px) !important;
@@ -888,7 +902,7 @@ document.addEventListener('DOMContentLoaded',apply);apply();
 
   #experience .phone-stage {
     min-height: 0 !important;
-    margin-top: -42px !important;
+    margin-top: 0 !important;
     padding-block: 0 !important;
     overflow: visible !important;
     row-gap: 0 !important;
