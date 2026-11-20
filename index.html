@@ -233,6 +233,27 @@ main,.site-footer{position:relative;z-index:1}
 @media(max-width:760px){.hero{min-height:730px}.interaction-instruction{margin-top:24px;font-size:9px;letter-spacing:.10em}.cta-orbit{margin-top:43px}.hero h1{margin-bottom:27px}}
 @media(prefers-reduced-motion:reduce){.water-field{opacity:.65}.interaction-instruction{display:none}}
 
+@media (max-width: 767px) {
+  .site-header {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    background: #070a17 !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+
+  .water-field,
+  #hero-particles {
+    display: none !important;
+  }
+}
+
 </style>
 <script>try{const l=localStorage.getItem('qb-language');document.documentElement.dataset.language=(l==='pl'||l==='en')?l:(navigator.language||'en').toLowerCase().startsWith('pl')?'pl':'en';document.documentElement.lang=document.documentElement.dataset.language}catch(e){}</script>
 <style id="qb-accessibility-refinements">
