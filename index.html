@@ -860,4 +860,47 @@ function apply(){
 let pending=false;function schedule(){if(pending)return;pending=true;queueMicrotask(()=>{pending=false;apply()})}
 new MutationObserver(schedule).observe(root,{attributes:true,attributeFilter:['lang','data-language']});
 document.addEventListener('DOMContentLoaded',apply);apply();
-})();</script></body></html>
+})();</script><style id="qb-mobile-layout-fix">
+@media (max-width: 760px) {
+  #experience .iphone {
+    width: min(264px, 61.6vw) !important;
+  }
+
+  #experience .phone-stage {
+    min-height: 0 !important;
+    overflow: visible !important;
+    row-gap: 14px !important;
+  }
+
+  #experience .phone-controls {
+    display: flex !important;
+    position: relative !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 5 !important;
+  }
+
+  .site-header {
+    height: auto !important;
+  }
+
+  .nav-shell {
+    height: auto !important;
+    min-height: 76px;
+    padding-block: 10px;
+    flex-wrap: wrap;
+  }
+
+  .nav-mid {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 8px;
+  }
+
+  #experience, #science, #questions {
+    scroll-margin-top: 125px;
+  }
+}
+</style>
+</body></html>
