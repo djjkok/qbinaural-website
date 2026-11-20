@@ -867,6 +867,21 @@ new MutationObserver(schedule).observe(root,{attributes:true,attributeFilter:['l
 document.addEventListener('DOMContentLoaded',apply);apply();
 })();</script><style id="qb-mobile-layout-fix">
 @media (max-width: 760px) {
+  /* Mobile preview: one-line heading, full phone, arrows at its sides. */
+  #experience .experience-intro h2 {
+    font-size: clamp(20px, 5.5vw, 28px) !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.035em !important;
+    white-space: nowrap !important;
+    margin: 0 0 12px !important;
+  }
+  #experience .experience-intro h2 span {
+    display: inline !important;
+  }
+  #experience .experience-intro h2 span + span::before {
+    content: " ";
+    white-space: pre;
+  }
   #experience .iphone {
     width: min(264px, 61.6vw) !important;
   }
@@ -879,10 +894,34 @@ document.addEventListener('DOMContentLoaded',apply);apply();
 
   #experience .phone-controls {
     display: flex !important;
-    position: relative !important;
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    grid-row: auto !important;
+    margin: 0 !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 0 !important;
+    padding-inline: 2px !important;
     visibility: visible !important;
     opacity: 1 !important;
-    z-index: 5 !important;
+    z-index: 25 !important;
+    pointer-events: none !important;
+  }
+  #experience .phone-controls .round-arrow {
+    pointer-events: auto !important;
+    flex: 0 0 42px !important;
+    width: 42px !important;
+    height: 42px !important;
+    color: #f5f7ff !important;
+    background: rgba(10, 15, 35, .86) !important;
+    border: 1px solid rgba(155, 176, 235, .5) !important;
+    font-size: 22px !important;
+    touch-action: manipulation;
+  }
+  #experience .phone-controls .control-count {
+    display: none !important;
   }
 
   .site-header {
