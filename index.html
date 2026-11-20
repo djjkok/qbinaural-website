@@ -805,9 +805,14 @@ section{scroll-margin-top:90px}
  function go(hash, smooth){
    const target=document.getElementById(hash.slice(1));if(!target)return;
    const nav=document.querySelector('.site-header,header');
-   const headerH=nav?Math.min(110,nav.getBoundingClientRect().height):76;
-   const margin=headerH+14;
-   let destination=target.getBoundingClientRect().top+window.scrollY-margin;
+   // On mobile align the actual visible heading, not the section's padded top.
+   // Measure the real two-row fixed header rather than capping it at 110px.
+   const headerH=nav?nav.getBoundingClientRect().height:76;
+   const mobile=window.innerWidth<=760;
+   const heading=mobile?target.querySelector('h2'):null;
+   const anchor=heading||target;
+   const margin=headerH+(mobile?18:14);
+   let destination=anchor.getBoundingClientRect().top+window.scrollY-margin;
    if(hash==='#experience' && window.innerWidth>=761){
      const phone=target.querySelector('.phone-stage');
      if(phone){
@@ -903,7 +908,7 @@ document.addEventListener('DOMContentLoaded',apply);apply();
 }
 
 #experience, #science, #questions {
-  scroll-margin-top: 125px !important;
+  scroll-margin-top: 0 !important;
 }
 
 #experience {
