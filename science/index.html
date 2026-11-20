@@ -91,7 +91,7 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:30px 0 42px;color:#858
 
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"The Science Behind the Sound | QBINAURAL","url":"/science/","description":"An evidence-aware overview of binaural beats research, methodological limitations, and selected peer-reviewed studies.","inLanguage":["en","pl"],"dateModified":"2026-11-02","isPartOf":{"@type":"WebSite","name":"QBINAURAL","url":"https://qbinaural.com/"}}</script>
-<link href="../science/" rel="canonical"/>
+<link rel="canonical" href="https://qbinaural.com/science/?lang=en">
 <style>.qb-appstore-fixed{display:inline-block;margin:12px 16px 12px 0;color:#c6bcff;text-decoration:underline;text-underline-offset:4px}</style><style>
 /* Shared premium navigation and legal readability */
 html{scroll-behavior:smooth}body{background:#090e1b!important;color:#eef2ff!important}
@@ -100,7 +100,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #b8b1ff!important;outline
 .legalhero h1,h1{line-height:1.12!important;letter-spacing:-.035em!important;text-shadow:none!important}
 .legal section{margin-bottom:2.4rem!important}.legal p{line-height:1.8!important}
 @media(max-width:720px){h1{overflow-wrap:break-word!important}}
-</style></head>
+</style><link href="https://qbinaural.com/science/?lang=pl" hreflang="pl" rel="alternate"/><link href="https://qbinaural.com/science/?lang=en" hreflang="en" rel="alternate"/><link href="https://qbinaural.com/science/?lang=en" hreflang="x-default" rel="alternate"/></head>
 <body>
 <a class="science-skip" href="#main"><span data-lang="en">Skip to content</span><span data-lang="pl">Przejdź do treści</span></a>
 <nav aria-label="Primary navigation"><div class="wrap nav">
@@ -225,7 +225,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #b8b1ff!important;outline
 <a href="../safety/"><span data-lang="en">Safety</span><span data-lang="pl">Bezpieczeństwo</span></a>
 <a href="../legal/"><span data-lang="en">Terms &amp; Legal</span><span data-lang="pl">Warunki i informacje prawne</span></a>
 <a href="mailto:support@qbinaural.com">support@qbinaural.com</a>
-</div></div><a class="qb-appstore-fixed" data-lang="en" href="https://apps.apple.com/app/id6816953392" rel="noopener noreferrer" target="_blank">Download on the App Store ↗</a><a class="qb-appstore-fixed" data-lang="pl" href="https://apps.apple.com/app/id6816953392" rel="noopener noreferrer" target="_blank">Pobierz w App Store ↗</a></footer>
+</div></div><a class="qb-appstore-fixed" data-lang="en" href="https://apps.apple.com/us/app/qbinaural/id6816953392?l=en" rel="noopener noreferrer" target="_blank">Download on the App Store ↗</a><a class="qb-appstore-fixed" data-lang="pl" href="https://apps.apple.com/us/app/qbinaural/id6816953392?l=en" rel="noopener noreferrer" target="_blank">Pobierz w App Store ↗</a></footer>
 <script>(()=>{const root=document.documentElement;let l='en';try{l=localStorage.getItem('qb-language')||((navigator.language||'en').toLowerCase().startsWith('pl')?'pl':'en')}catch(e){};function setLanguage(lang){root.dataset.language=lang;root.lang=lang;try{localStorage.setItem('qb-language',lang)}catch(e){};document.querySelectorAll('[data-set]').forEach(b=>b.classList.toggle('on',b.dataset.set===lang))};document.querySelectorAll('[data-set]').forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.set)));setLanguage(l)})();</script>
 <script id="qb-language-navigation-sync">
 (()=>{
@@ -268,4 +268,36 @@ a:focus-visible,button:focus-visible{outline:2px solid #b8b1ff!important;outline
  if(allowed.has(q))select(q);
  else {updateLinks();updateButtons()}
 })();
-</script></body></html>
+</script><script id="qb-locale-quality-fixes">(function(){'use strict';
+const root=document.documentElement;
+const titles={pl:"Nauka o dźwięku | QBINAURAL",en:"The Science Behind the Sound | QBINAURAL"};
+const descriptions={pl:"Poznaj badania nad dudnieniami różnicowymi, koncentracją, relaksem i snem. Źródła naukowe i odpowiedzialne informacje.",en:"Explore research on binaural beats, focus, relaxation and sleep, with peer-reviewed references."};
+const page="/science/";
+function apply(){
+ const lang=root.dataset.language==='pl'||root.lang==='pl'?'pl':'en';
+ document.title=titles[lang];
+ let description=document.querySelector('meta[name="description"]');
+ if(!description){description=document.createElement('meta');description.name='description';document.head.appendChild(description)}
+ description.content=descriptions[lang];
+ let canonical=document.querySelector('link[rel="canonical"]');
+ if(!canonical){canonical=document.createElement('link');canonical.rel='canonical';document.head.appendChild(canonical)}
+ canonical.href='https://qbinaural.com'+page+'?lang='+lang;
+ document.querySelectorAll('a[href*="apps.apple.com"]').forEach(a=>{
+  a.href=lang==='pl'?'https://apps.apple.com/pl/app/qbinaural/id6816953392?l=pl':'https://apps.apple.com/us/app/qbinaural/id6816953392?l=en';
+  if(a.hasAttribute('aria-label'))a.setAttribute('aria-label',lang==='pl'?'QBINAURAL w App Store':'QBINAURAL on the App Store');
+ });
+ document.querySelectorAll('img[data-store-badge]').forEach(img=>{
+  const src='/assets/app-store-'+lang+'.svg';if(img.getAttribute('src')!==src)img.setAttribute('src',src);
+  img.alt=lang==='pl'?'Pobierz w App Store':'Download on the App Store';
+  const fallback=img.nextElementSibling;if(fallback?.classList.contains('badge-fallback'))fallback.textContent=lang==='pl'?'Pobierz w App Store':'Download on the App Store';
+ });
+ const prev=document.getElementById('screen-prev'),next=document.getElementById('screen-next'),tap=document.getElementById('phone-tap-next');
+ if(prev)prev.setAttribute('aria-label',lang==='pl'?'Poprzedni ekran':'Previous screen');
+ if(next)next.setAttribute('aria-label',lang==='pl'?'Następny ekran':'Next screen');
+ if(tap){tap.setAttribute('aria-label',lang==='pl'?'Następny ekran podglądu':'Next preview screen');const sr=tap.querySelector('.sr-only');if(sr)sr.textContent=lang==='pl'?'Następny ekran podglądu':'Next preview screen'}
+ document.querySelectorAll('a[data-i18n="navSupport"]').forEach(a=>a.textContent=lang==='pl'?'Pomoc':'Support');
+}
+let pending=false;function schedule(){if(pending)return;pending=true;queueMicrotask(()=>{pending=false;apply()})}
+new MutationObserver(schedule).observe(root,{attributes:true,attributeFilter:['lang','data-language']});
+document.addEventListener('DOMContentLoaded',apply);apply();
+})();</script></body></html>
