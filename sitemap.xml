@@ -1,8 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://qbinaural.com/</loc></url>
-<url><loc>https://qbinaural.com/science/</loc></url>
-<url><loc>https://qbinaural.com/privacy/</loc></url>
-<url><loc>https://qbinaural.com/safety/</loc></url>
-<url><loc>https://qbinaural.com/legal/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+  <loc>https://qbinaural.com/?lang=en</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://qbinaural.com/?lang=en"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://qbinaural.com/?lang=pl"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://qbinaural.com/?lang=en"/>
+</url>
+<url>
+  <loc>https://qbinaural.com/?lang=pl</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://qbinaural.com/?lang=en"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://qbinaural.com/?lang=pl"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://qbinaural.com/?lang=en"/>
+</url>
+<url>
+  <loc>https://qbinaural.com/science/?lang=en</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://qbinaural.com/science/?lang=en"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://qbinaural.com/science/?lang=pl"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://qbinaural.com/science/?lang=en"/>
+</url>
+<url>
+  <loc>https://qbinaural.com/science/?lang=pl</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://qbinaural.com/science/?lang=en"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://qbinaural.com/science/?lang=pl"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://qbinaural.com/science/?lang=en"/>
+</url>
+<url>
+  <loc>https://qbinaural.com/privacy/?lang=en</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://qbinaural.com/privacy/?lang=en"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://qbinaural.com/privacy/?lang=pl"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://qbinaural.com/privacy/?lang=en"/>
+</url>
+<url>
+  <loc>https://qbinaural.com/privacy/?lang=pl</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://qbinaural.com/privacy/?lang=en"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://qbinaural.com/privacy/?lang=pl"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://qbinaural.com/privacy/?lang=en"/>
+</url>
+<url>
+  <loc>https://qbinaural.com/safety/?lang=en</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://qbinaural.com/safety/?lang=en"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://qbinaural.com/safety/?lang=pl"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://qbinaural.com/safety/?lang=en"/>
+</url>
+<url>
+  <loc>https://qbinaural.com/safety/?lang=pl</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://qbinaural.com/safety/?lang=en"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://qbinaural.com/safety/?lang=pl"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://qbinaural.com/safety/?lang=en"/>
+</url>
+<url>
+  <loc>https://qbinaural.com/legal/?lang=en</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://qbinaural.com/legal/?lang=en"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://qbinaural.com/legal/?lang=pl"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://qbinaural.com/legal/?lang=en"/>
+</url>
+<url>
+  <loc>https://qbinaural.com/legal/?lang=pl</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://qbinaural.com/legal/?lang=en"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://qbinaural.com/legal/?lang=pl"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://qbinaural.com/legal/?lang=en"/>
+</url>
 </urlset>
