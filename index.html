@@ -235,6 +235,15 @@
  #experience .iphone{align-self:center!important;flex-shrink:0!important}
  #experience .mobile-state-guide{margin-top:8px!important}
 }
+
+/* Mobile phone: preserve complete original screenshots, including bottom controls. */
+@media(max-width:760px){
+ #experience .phone-display .phone-actual{object-fit:contain!important;object-position:center center!important}
+ #experience .phone-stage{grid-template-rows:auto!important;align-content:start!important;justify-items:center!important;margin-top:0!important;padding-top:12px!important;padding-bottom:20px!important;transform:none!important}
+ #experience .iphone{position:relative!important;grid-row:1!important;margin:0 auto!important}
+ #experience .phone-controls{grid-row:1!important}
+ #experience .mobile-state-guide{margin-top:16px!important}
+}
 </style>
 <style>
 /* QBINAURAL Premium 2.3 — full-page water-particle field (demo only). */
