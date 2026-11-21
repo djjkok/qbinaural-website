@@ -224,6 +224,17 @@
 
 /* Mobile: lift only the subpage navigation links, without moving hero or page sections. */
 @media(max-width:760px){.site-header .nav-mid{transform:translateY(-5px)!important}}
+
+/* Mobile-only navigation compactness and complete phone frame visibility. */
+@media(max-width:520px){
+ .site-header .nav-shell{gap:3px 10px!important;padding:5px 18px 5px!important;min-height:0!important}
+ .site-header .nav-mid{padding-bottom:0!important;margin:0!important}
+}
+@media(max-width:760px){
+ #experience .phone-stage{height:auto!important;min-height:0!important;padding-top:12px!important;padding-bottom:28px!important;overflow:visible!important}
+ #experience .iphone{align-self:center!important;flex-shrink:0!important}
+ #experience .mobile-state-guide{margin-top:8px!important}
+}
 </style>
 <style>
 /* QBINAURAL Premium 2.3 — full-page water-particle field (demo only). */
