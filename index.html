@@ -200,7 +200,28 @@
 .hero-audio-hint,.hero-trust{position:relative;z-index:3;text-align:center;margin:12px auto 0;color:#c4c0d7;font-size:12px;line-height:1.5;max-width:700px}
 .hero-trust{color:#ece8fa;margin-top:16px;font-size:clamp(15px,1.2vw,18px);font-weight:600;line-height:1.65;letter-spacing:0;max-width:850px}.hero-audio-hint{font-size:13px;color:#aeb4c8;margin-top:14px;line-height:1.6}
 @media(max-width:760px){.hero h1{font-size:clamp(2rem,9vw,3.65rem)!important;letter-spacing:-.05em!important}.hero-listen-actions{margin-top:18px}.hero-audio-button,.hero-store-button{width:min(100%,340px)}.hero .hero-lead{max-width:92%;font-size:15px!important}.hero .cta-orbit{margin-top:14px}}
-@media(max-width:760px){.hero-trust{font-size:15px!important;line-height:1.65!important;max-width:330px!important;margin-top:18px!important}.hero-audio-hint{font-size:12px!important;max-width:310px!important}} </style>
+@media(max-width:760px){.hero-trust{font-size:15px!important;line-height:1.65!important;max-width:330px!important;margin-top:18px!important}.hero-audio-hint{font-size:12px!important;max-width:310px!important}} 
+/* Mobile preview: original screenshots stay arrow-controlled; descriptions are independent. */
+.mobile-state-guide{display:none}
+@media(max-width:760px){
+ #experience .experience-controls{display:none!important}
+ #experience .experience-grid{row-gap:12px!important}
+ #experience .phone-stage{order:2}
+ #experience .mobile-state-guide{display:block;order:3;margin:18px auto 0;width:min(100%,480px)}
+ #experience .mobile-state-guide h3{font-size:20px;line-height:1.25;margin:0 0 18px;color:#f5f7fe;letter-spacing:-.02em}
+ #experience .mobile-state-guide [data-lang]{display:none}
+ html[data-language="en"] #experience .mobile-state-guide [data-lang="en"],
+ html[data-language="pl"] #experience .mobile-state-guide [data-lang="pl"]{display:block}
+ #experience .mobile-state-list{display:grid;gap:0}
+ #experience .mobile-state-list article{padding:15px 0 16px;border-top:1px solid rgba(185,195,234,.16)}
+ #experience .mobile-state-list h4{font-size:13px;letter-spacing:.13em;margin:0 0 6px;color:#c5d9ff}
+ #experience .mobile-state-list p{font-size:14px;line-height:1.55;margin:0;color:#c5cbe0}
+ #experience .phone-bezel{border-radius:35px!important;padding:6px!important}
+ #experience .phone-bezel:after{border-radius:31px!important}
+ #experience .phone-display{border-radius:29px!important}
+ #experience .dynamic-island{width:67px!important;height:16px!important;top:7px!important;border-radius:12px!important}
+}
+</style>
 <style>
 /* QBINAURAL Premium 2.3 — full-page water-particle field (demo only). */
 html{background:#050710}
@@ -563,6 +584,16 @@ section{scroll-margin-top:90px}
 </div>
 <div class="phone-controls"><button aria-label="Previous screen" class="round-arrow" id="screen-prev" type="button">←</button><span class="control-count" id="control-count">01 <span>/ 09</span></span><button aria-label="Next screen" class="round-arrow" id="screen-next" type="button">→</button></div><p class="phone-gesture-hint" data-i18n="phoneHint">TAP OR SWIPE TO EXPLORE</p>
 </div>
+<section class="mobile-state-guide" aria-label="Listening modes">
+<h3 data-lang="en">Explore the listening states</h3><h3 data-lang="pl">Poznaj stany słuchania</h3>
+<div class="mobile-state-list">
+<article><h4>FOCUS</h4><p data-lang="en">A listening space for concentration, studying and focused work.</p><p data-lang="pl">Przestrzeń dźwiękowa do koncentracji, nauki i skupionej pracy.</p></article>
+<article><h4>PERFORMANCE</h4><p data-lang="en">A listening rhythm to accompany preparation, activity and performance.</p><p data-lang="pl">Rytm słuchania towarzyszący przygotowaniu, aktywności i działaniu.</p></article>
+<article><h4>RELAX</h4><p data-lang="en">A calmer sound experience for a quiet moment during the day.</p><p data-lang="pl">Spokojniejsze brzmienie na chwilę wytchnienia w ciągu dnia.</p></article>
+<article><h4>MEDITATE</h4><p data-lang="en">An immersive sound setting for meditation and mindful pauses.</p><p data-lang="pl">Otoczenie dźwiękowe do medytacji i uważnych chwil dla siebie.</p></article>
+<article><h4>SLEEP</h4><p data-lang="en">A gentle listening environment for winding down before sleep.</p><p data-lang="pl">Łagodne otoczenie dźwiękowe do wyciszenia przed snem.</p></article>
+</div>
+</section>
 </div>
 </section>
 <section aria-labelledby="signal-title" class="signal-section section-pad" id="signal">
